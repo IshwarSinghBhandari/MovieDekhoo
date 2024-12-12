@@ -1,0 +1,136 @@
+
+
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    /* padding: 1rem; */
+    background-color: black;
+}
+.navbar-collapse{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link {
+    transition: color 0.3s ease;
+    color:antiquewhite
+}
+
+.nav-link:hover {
+    color: #6efb61;
+}
+
+.navbar-brand{
+    height:4rem;
+}
+
+.card{
+    border: none;
+}
+hr{
+    margin: 0.5rem;
+}
+.navbar-toggler{
+    color: white;
+    border: 1px solid white;
+}
+.card-detail{
+    text-align: start;
+    padding-left: 0.5rem;
+}
+
+
+
+
+.nav-item .nav-link {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.img-container {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.img-container img#bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5); /* Darkens the image */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0px;
+    background-color: #16b901;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 575px) {
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .search-bar input[type="text"] {
+        width: 200px;
+    }
+
+    .content {
+        padding: 0 10px;
+    }
+}
